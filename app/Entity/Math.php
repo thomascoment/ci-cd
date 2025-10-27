@@ -6,6 +6,9 @@ use Exception;
 
 use function PHPUnit\Framework\throwException;
 
+/**
+ * Class Math pour effectuer des opérations simples
+ */
 final class Math
 {
     public function add(int $a, int $b): int
