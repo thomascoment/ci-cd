@@ -5,6 +5,9 @@ namespace App\Tests;
 use PHPUnit\Framework\TestCase;
 use App\Entity\Math;
 
+/**
+ * Class test pour la class Math
+ */
 final class MathTest extends TestCase
 {
     private Math $math;
