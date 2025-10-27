@@ -1,0 +1,31 @@
+{
+    "name": "thoma/ci_cd",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Coment",
+            "email": "thomas.coment@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^12.4",
+        "friendsofphp/php-cs-fixer": "^3.89",
+        "phpstan/phpstan": "^2.1"
+    },
+    "config": {
+  "platform": {
+    "php": "8.3.14"
+  }
+}
+
+}
