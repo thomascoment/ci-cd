@@ -19,7 +19,7 @@ final class MathTest extends TestCase
     public function testAdd():void
     {
         $this->assertEquals(
-            9, $this->math->add(4,5)
+            10, $this->math->add(4,5)
         );
     }
 

@@ -1,17 +1,17 @@
 ## Test PHP code style with PHP CS Fixer
-name: PHP CS Fixer
-on:
+name: PHP CS Fixer # Nom du workflow
+on: # Evénement déclencheur qui est un push sur le main ou un pull_request.
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
 
 jobs:
-  fix:
+  fix: # le job est de "fix" le code si il n'est pas bon.
     runs-on: ubuntu-latest
-    steps:
+    steps: # Pour ce job il y a 4 steps en tout.
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2 # La localisation d'un et la version d'un fichier workflow réutilisable.
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -21,5 +21,5 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
 
-      - name: Run PHP CS Fixer
+      - name: Run PHP CS Fixer #CS Fixer
         run: php ./vendor/bin/php-cs-fixer fix app
